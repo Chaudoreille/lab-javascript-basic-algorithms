@@ -111,8 +111,8 @@ function isPalindrom(phrase) {
 }
 
 for (index in phrasesToCheck) {
-    phrase = phrasesToCheck[index];
+    let phrase = phrasesToCheck[index];
     let predicate = isPalindrom(phrase);
-    let color = predicate ? "\x1b[32m" : "\x1b[91m";
-    console.log(`${color}"${phrase}" ${predicate ? "is" : "is not"} a palindrom \x1b[0m`);
+
+    console.log(`"${phrase}" ${predicate ? "is" : "is not"} a palindrom`);
 }
